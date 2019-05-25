@@ -13,11 +13,13 @@ var getGlobal = function () {
 
 var global = getGlobal();
 
-module.exports = exports = global.fetch;
+module.exports = exports = fetch;
 
+/*
 // Needed for TypeScript and Webpack.
 exports.default = global.fetch.bind(global);
 
 exports.Headers = global.Headers;
 exports.Request = global.Request;
 exports.Response = global.Response;
+*/
